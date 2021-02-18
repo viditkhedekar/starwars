@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>The Force</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <script>
+            function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+            </script>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="index.html">The Basics</a></li>
+                <li><a href="sides.html" >The Good Side and the Bad Side</a></li>
+                <li><a href="force.html" class="active">The Force</a></li>
+                <li><a href="#contact">The Jedi</a></li>
+                <li><a href="#contact">The Galaxy</a></li>                    
+              </ul>
+              <br>
+        </header>
+        <h1>The Force</h1>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="Theforce.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+          </div>
+          
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          <p>Drag "The Force" into either the light side(green) or the dark side(red) to choose which aspect of the force you will use. Use the table below for reference.</p>
+          <br>
+          <br>
+          <br>
+          <table border="5px" width="50%">
+              <tr>
+                  <th style="background-color: green;">The Light Side</th>
+                  <th style="background-color: red;">The Dark Side</th>
+              </tr>
+              <tr>
+                  <td>Wisdom</td>
+                  <td>Forbidden Knowledge</td>
+              </tr>
+              <tr>
+                <td >Compassion</td>
+                <td>Passion</td>
+              </tr>
+              <tr>
+                <td>Inner Strength</td>
+                <td>Power</td>
+              </tr>
+              <tr>
+                  <td>Loyalty</td>
+                  <td>Tyranny</td>
+              </tr>
+          </table>
+          <br>
+          <blockquote><i>"A Jedi uses the force for knowledge and defense never for attack."</i></blockquote>
+          <p>Yoda</p>
+          <blockquote><i>"The ability to destroy a planet is insignificant to the power of the Force."</i></blockquote>
+          <p>Darth Vader</p>
+          
+
+
+    </body>
+</html>
