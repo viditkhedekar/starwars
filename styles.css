@@ -40,5 +40,50 @@ ul {
   body {
       background-color: black;
       color:white;
+      font-family:Arial, Helvetica, sans-serif;
   }
   
+
+  #sides {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  #sides td, #sides th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #sides tr:nth-child(even){background-color: #737373;}
+  
+  #sides tr:hover {background-color: #737373;}
+  
+  #sides th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: #ddd;
+  }
+
+
+
+  #div1 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: green;
+  }
+  #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: red;
+  }
