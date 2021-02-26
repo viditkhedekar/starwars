@@ -1,0 +1,11 @@
+1. Check status of files
+    > git status
+
+2. Add changes 
+    > git add <file-name>
+
+3. To commit changes 
+    > git commit -m "Some messge"        
+
+4. To send changes to github
+    > git push    
